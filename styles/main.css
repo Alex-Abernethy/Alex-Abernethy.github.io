@@ -3,7 +3,7 @@ header {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 60px;
-    border: 1px;
+    border: 2px;
     border-style: solid;
     border-color: black;
   }
@@ -12,6 +12,10 @@ footer {
     text-align: center;
     clear: left;
     margin: 20px;
+}
+
+li{
+    padding: 3px;
 }
 
 .image {
@@ -25,6 +29,7 @@ body {
 
 h1 {
     font-family: 'Roboto', sans-serif;
+    margin: 15 5 15 5;
   }
 
 p {
