@@ -34,6 +34,7 @@ p {
 .index {
     font-family: 'Roboto', sans-serif;
     border: 1px;
+    margin-right: 10px;
     border-style: solid;
     border-color: black;
 }
@@ -42,13 +43,13 @@ p {
     float: left;
   }
   
-  /* Left and right column */
-  .column.side {
+  /* Left column */
+  .column.left {
     width: 30%;
   }
   
   /* Middle column */
-  .column.middle {
+  .column.right {
     width: 70%;
   }
   
