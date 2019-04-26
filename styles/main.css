@@ -46,12 +46,17 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-.index {
+.index-list {
     font-family: 'Roboto', sans-serif;
-    border: 1px;
     margin-right: 10px;
+}
+
+.border {
+    margin: 10 10 10 0;
     border-style: solid;
     border-color: black;
+    border-width: 1px;
+
 }
 
 .column {
