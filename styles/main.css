@@ -1,3 +1,17 @@
+header { 
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+  }
+
+footer { 
+    display: block;
+}
+  
 body {
     background-color: powderblue;
   }
@@ -6,6 +20,34 @@ h1 {
     font-family: 'Roboto', sans-serif;
   }
 
-P {
+p {
     font-family: 'Roboto', sans-serif;
 }
+
+.index {
+    font-family: 'Roboto', sans-serif;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.column {
+    float: left;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 30%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 70%;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
