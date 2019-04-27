@@ -1,11 +1,5 @@
-header { 
-    display: block;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 60px;
-    border: 2px;
-    border-style: solid;
-    border-color: black;
+body {
+    background-color: powderblue;
   }
 
 footer { 
@@ -13,23 +7,6 @@ footer {
     clear: left;
     margin: 20px;
 }
-
-li{
-    padding: 3px;
-}
-
-.image {
-    display: block;
-    margin: 15px;
-}
-
-.txt {
-    margin: 5 1 5 1;
-}
-
-body {
-    background-color: powderblue;
-  }
 
 h1 {
     font-family: 'Roboto', sans-serif;
@@ -42,13 +19,22 @@ h2 {
     text-align: center;
 }
 
-p {
+header { 
+    display: block;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
 }
 
-.index-list {
+li{
+    padding: 3px;
+}
+
+p {
     font-family: 'Roboto', sans-serif;
-    margin-right: 10px;
 }
 
 .border {
@@ -75,7 +61,20 @@ p {
   
   /* Responsive layout - columns will stack vertically on small screens */
   @media screen and (max-width: 600px) {
-    .column.side, .column.middle {
+    .column.left, .column.right {
       width: 100%;
     }
   }
+
+.image {
+    display: block;
+    margin: 15px;
+}
+
+.index-list {
+    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
+}
+.txt {
+    margin: 5 1 5 1;
+}
