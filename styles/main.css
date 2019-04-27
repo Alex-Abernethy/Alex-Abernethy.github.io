@@ -41,9 +41,22 @@ p {
     margin: 10 10 10 0;
     border-style: solid;
     border-color: black;
-    border-width: 1px;
+    border-width: 2px;
 
 }
+
+.button {
+    background-color: powderblue;
+    border-color: black;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px;
+    font: 16px;
+  }
 
 .column {
     float: left;
