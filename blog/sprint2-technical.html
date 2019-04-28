@@ -3,13 +3,116 @@
     <link rel="stylesheet" type="text/css" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>sprint2tech</title>
+    <title>display inline vs inline blocks</title>
   </head>
-  <body>
 
-    <h1>Alex Abernethy's Values</h1> 
-    
-    <p> Sprint 2 Techincal blog page coming soon...</p>
+  <body>
+    <header>
+      <h1>Technical Blag</h1> 
+    </header>
+
+    <div class="column left">
+      <div class="border">
+        <h2>Index</h2>
+        
+        <ul type = "disc" class="index-list">
+          <li><a href="../index.html"><div class="button">Home</div></li>
+          <li>Blog Posts</a></li>
+            <ol>
+              <li><a href="blog/sprint1-technical.html"><div class="button">Sprint 1 Technical</div></a></li>
+              <li><a href="blog/sprint2-technical.html"><div class="button">Sprint 2 Technical</div></a></li>
+            </ol>
+          <li><a href="values/values.html"><div class="button">Values</div></a></li>
+          <li><a href="learning-plan/learning-plan.html"><div class="button">Learning plan</div></a></li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="column right">
+
+      <div class="border">
+        <h2>The difference between display inline and inline blocks</h2> 
+      </div>
+
+      <p>Using HTML and CSS there are many way to display content.
+        Inline content is displayed inline with other content 
+        <span class="inline">like this span which I have coloured red</span>
+        Inline displayed content cannot have a width set and sits normally within the line like the span tagged red text above.
+      </p>
+      
+      <p class="display-block">Another way to diplay content is as a block. 
+        Text tagged as a paragraph is displayed by default as a block, such as this whole statement. 
+        Blocks can have addition properties set like the border around this paragraph.</p>
+        
+      <p>Now to compare the differences between the <span class="inline-text">display: inline</span> and <span class="inline-text">display: inline-block</span>.</p>
+
+      <table>
+          <tr>
+            <th></th>
+            <th>Inline</th>
+            <th>Inline-block</th>
+          </tr>
+          <tr>
+            <td>Width/Height</td>
+            <td>not respceted</td>
+            <td>respected</td>
+          </tr>
+          <tr>
+            <td>Top/Bottom padding</td>
+            <td>not respceted</td>
+            <td>respected</td>
+          </tr>
+          <tr>
+            <td>Top/Bottom margins</td>
+            <td>not respceted</td>
+            <td>respected</td>
+          </tr>
+          <tr>
+            <td>Line Break</td>
+            <td>No</td>
+            <td>Yes</td>
+          </tr>
+         </table>
+      
+         <p>An example of a common use for <span class="inline-text">display: inline-block</span> is to list horizontally. Useful if you want horizontal navigation buttons.</p>
+          <figure>
+              <figcaption>CSS rule to make a list display as an inline-block</figcaption>
+              <pre>
+                <code>
+.horizontal-list li{
+  display: inline-block;
+}
+                </code>
+              </pre>
+            </figure>
+          <figure>
+          <figcaption>HTML for a horizontal list</figcaption>
+            <pre>
+              <code>
+&ltul class="horizontal-list">
+  &ltli>Item #1&lt/li>
+  &ltli>Item #2&lt/li>
+  &ltli>Item #3&lt/li>
+  &ltli>Item #4&lt/li>
+&lt/ul>
+                </code>
+              </pre>
+          </figure>
+          <div>
+            <p>The code above makes this horizontal list below.</p>
+            <ul class="horizontal-list">
+                <li>Item #1</li>
+                <li>Item #2</li>
+                <li>Item #3</li>
+                <li>Item #4</li>
+              </ul>
+          </div>
+        </div>
+
+    <Footer>
+      <p>Contact details: Details coming soon</p>
+      <p><a href="license.html"> (c) 2019 Alex-Abernethy</a></p>
+    </Footer>
 
   </body>
 </html>

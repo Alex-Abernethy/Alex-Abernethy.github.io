@@ -2,6 +2,10 @@ body {
     background-color: powderblue;
   }
 
+figure {
+    font-family: 'Roboto', sans-serif;
+}
+
 footer { 
     text-align: center;
     clear: left;
@@ -19,11 +23,17 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-family: 'Roboto', sans-serif;
+    margin: 10 5 10 5;
+    text-align: center;
+}
+
 header { 
     display: block;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 60px;
+    font-size: 45px;
     border: 2px;
     border-style: solid;
     border-color: black;
@@ -36,6 +46,13 @@ li{
 p {
     font-family: 'Roboto', sans-serif;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+  }
 
 .border {
     margin: 10 10 10 0;
@@ -79,6 +96,22 @@ p {
     }
   }
 
+.display-block {
+    padding: 2 2 2 2;
+    margin: 2 2 2 2;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    float: left;
+    padding-inline-start: 0px;
+}
+
 .image {
     display: block;
     margin: 15px;
@@ -88,6 +121,15 @@ p {
     font-family: 'Roboto', sans-serif;
     margin-right: 10px;
 }
+
+.inline {
+    color: red;
+}
+
+.inline-text {
+    background: white;
+}
+
 .txt {
     margin: 5 1 5 1;
 }
