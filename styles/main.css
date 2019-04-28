@@ -81,16 +81,21 @@ table, th, td {
   
   /* Left column */
   .column.left {
-    width: 30%;
+    width: 20%;
   }
   
   /* Middle column */
+  .column.middle {
+    width: 60%;
+  }
+
+  /* right column */
   .column.right {
-    width: 70%;
+      width: 20%
   }
   
   /* Responsive layout - columns will stack vertically on small screens */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     .column.left, .column.right {
       width: 100%;
     }
