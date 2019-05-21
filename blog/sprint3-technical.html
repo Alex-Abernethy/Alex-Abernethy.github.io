@@ -1,0 +1,115 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sprint 3 tech blog</title>
+  </head>
+
+  <body>
+    <div class="column middle">
+        <div class="border">
+            <h2>Sprint 3 Technical Blog</h2> 
+        </div>
+
+        <h3>HTML vs CSS</h3>
+        <p>HTML is the structure and content of a page. 
+            If it were a book it would be the headings, paragraphs, images and footnotes. 
+            With only HTML our book looks like a manuscript. 
+            Just text on a page all in a single font and with no style what so ever.</p>
+        <div class="image" >
+            <img src="../pictures/Manuscript.jpg" alt="manuscript" height=250>
+        </div>
+        <p>CSS is a documents style. It takes our manuscript and fleshes it out.
+            Turning something bland into a proper book.
+            Pages get columns, headings are bold, fonts change.</p>
+
+        <div class="image" >
+            <img src="../pictures/Book.jpg" alt="design book" height=250>
+        </div>
+
+        <h3>Control Flow and Loops</h3>
+        <p>Control flow is the order in which a computer reads and executes code. 
+            This is normally top to bottom in the same way you would read a list of instructions.</p>
+
+        <p>Example: calling somone from your mobile</p>
+        <ul>
+            <li>Pick up phone</li>
+            <li>Unlock phone</li>
+            <li>Open call app</li>
+            <li>Dial number</li>
+            <li>Press call button</li> 
+            <li>Wait for answer</li>
+        </ul>
+
+        <p>There are exceptions to the normal flow of a computer reading and executing code. Loops are a common exception. 
+        In a loop the computer will keep repeating the requested steps until a specified condition is met.</p>
+
+        <p>Example: Attempting to send a fax (why does faxing still exist) 5 times.</p>
+        <ul>
+            <li>Dial number</li>
+            <li>Await pickup</li>
+            <li>If answered transmit fax</li>
+            <li>If less than 5 attempt try again</li>
+            <li>Otherwise faxing fails</li> 
+        </ul>
+
+    
+        <h3>The DOM and interacting with it</h3>
+        
+        <p>The Document Object Model (or DOM) is the glue that binds HTML's structure, CCS's style, and Javascript's interactivity together. 
+            The DOM is shown as a tree view of the files that make up webpages page.
+            The tree is made up of nodes and objects. The vast majority of these that we care about are elements.</p>
+                
+        <p>A powerful feature of the DOM is that it allows you to modify the document elements that make up a page it real time. 
+            This allows you to tweak layout and style in real time to test changes or fix bugs.
+             So far I have found this particularly helpful for CSS bugs.</p>
+
+        <p>To interact with the DOM you can right click on any webpage in your browser and click inspect.
+        The image below is an example of how the DOM is displayed for this webpage.</p>
+            
+        <div class="image">
+            <img src="../pictures/DocumentObjectModel.png" alt="DOM" height=500>
+        </div>
+
+        <p>The DOM is editable in real time. The entire document that makes up a webpage can be edited.
+            As an example you could edit border-color at the bottom of the image to replace 'black' with 'white' and the borders on the page would turn white.
+            This allows developers to quickly test changes or play around with ideas.</p>
+            
+        <h3>Accessing data from Objects and Arrays</h3>
+            
+        <p>Arrays are a series of variables stored in order. 
+            These variables are indexed starting with 0 for the first value. 
+            Like houses on a street if the first house was 0.</p>
+
+        <p>As arrays are ordered you can modify, add or remove values from the start, end or a specific position.</p>
+                
+        <p>Objects are information stored using 'keys'. 
+            Eg. Object Car contains a number of components, each containing a numver of values (part number, number in the car, etc).
+            When accessing this information you ask the program to return car -> wheels -> number and it will return '4'.</p>
+                
+        <h3>Functions and why they are useful</h3>
+        
+        <p>A function is a block of code that does a task. Functions are then strung together to make complex programs.</p>
+
+        <p>This example function below tells you if a number (num) is 'bigger than 10' and if not (else) tells you it is 'less than 10'</p>
+                
+        <p>if (num > 10) {
+            return "Bigger than 10";
+            } else {
+            return "10 or Less";
+            }</p>
+
+        <p>Functions are how you tell a computer to do stuff. 
+            When you click '=' on a calculator it runs functions to determine the result. 
+            When you turn you computer on functions run to load the operating system so you cna do things. 
+            They are the building blocks of everything.</p>
+  
+    </div>
+
+        <script src="../scripts/templateScript.js"></script>
+
+  </body>
+</html>
