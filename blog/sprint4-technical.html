@@ -14,18 +14,84 @@
             <h2>Sprint 4 Technical Blog</h2> 
         </div>
 
-        <h3>Getting Stuck and Problem Solving</h3>
+        <h3>Getting Blocked and Problem Solving</h3>
         
-        Got blocked on a simple problem
-Solved a problem in an elegant way.
-In both cases:
+        <p>
+          A problem I got stuck on was writing code to remove any instance of 'buzz' from a string. Using pseudocode to plan I got initial code working quickly. I got stuck on how to do it in a case insensitive manner. I knew I could write code to remove 'buzz, Buzz, BUzz, BuZz, etc.' but that would be messy and there is a chance I would miss something.
+        </p>
 
-What was the problem?
-What problem solving techniques did you use?
-How did you feel throughout the process?
-What did you learn?
+        <p>
+          To solve this I looked up various options and setteled on RegEx (regular expression). This had the bonus that I've seen them before and had no clue how they really worked. So I got to solve a problem and satiate my curiousity at the same time.
+        </p>
 
-<h3>Reflections of Problem Solving Techniques</h3>
+        <p>
+          <pre>
+            <code>
+              function deBee(str) {
+                var words = str.split(' ');
+            
+                var deBeeStr = words.filter(function(val) {
+                  return !/buzz/i.test(val);
+                });
+                return deBeeStr.join(' ');
+              }
+            </code>
+          </pre>
+        </p>
+
+        <p>
+          This function splits up the string into individual words, filters out 'buzz' in a case insensitive manner by testing for 'buzz' in any case. It then joins the words back together as a new string.
+        </p>
+
+        <p>
+          During this process I managed to turn my frustration into curisousity and learn something new. Before working out my way forward I wasted sometime trying to find ways to do this elegantly.
+        </p>
+
+        <h3>Solving Something Elegantly</h3>
+
+        <p>
+          I refactored my code for concatenating strings together to make it simpler.
+        </p>
+
+        <p>
+          Version I
+          <pre>
+            <code>
+              function concatMyArray (arr){
+                arrayString = arr.join('');
+                return arrayString;
+              }
+            </code>
+          </pre>
+        </p>
+
+        <p>
+          Version II
+          <pre>
+            <code>
+              function concatMyArray (arr){
+                return arrayString = arr.join('');
+              }
+            </code>
+          </pre>
+        </p>
+
+        <p>
+          Version III
+          <pre>
+            <code>
+              function concatMyArray (arr){
+                return arr.join('');
+              }
+            </code>
+          </pre>
+        </p>
+
+        <p>
+          This situation didn't require much in the way of problem solving. However I went back and rewrote it as a simple way of implementing things I had learnt during the other JS coding katas. First to set the variable and return it in a single line and then to remove the variable altogether after realising it was never required.
+        </p>
+
+        <h3>Reflections of Problem Solving Techniques</h3>
 
 Pseudocode
 Trying something
