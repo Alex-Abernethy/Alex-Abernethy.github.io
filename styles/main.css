@@ -1,7 +1,3 @@
-body {
-    background-color: powderblue;
-  }
-
 figure {
     font-family: 'Roboto', sans-serif;
 }
@@ -10,11 +6,13 @@ footer {
     text-align: center;
     clear: left;
     margin: 20px;
+    background-color: yellow;
 }
 
 h1 {
     font-family: 'Roboto', sans-serif;
     margin: 15px 5px 15px 5px;
+    padding: 5px;
   }
 
 h2 {
@@ -83,16 +81,19 @@ table, th, td {
   /* Left column */
   .column.left {
     width: 20%;
+    background-color: powderblue;
   }
   
   /* Middle column */
   .column.middle {
     width: 60%;
+    background-color: powderblue;
   }
 
   /* right column */
   .column.right {
-      width: 20%
+      width: 20%;
+      background-color: powderblue;
   }
   
   /* Responsive layout - columns will stack vertically on small screens */
